@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sam Artwork</title> 
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"  >
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kanit" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" >
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" >
+    <link rel="stylesheet" type="text/css"href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Montserrat|Ubuntu" >
+	<meta charset="UTF-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<meta name="description" content="New Zealand, Christchurch, artworks and gallery">
+</head> 
+<body>	
+	<nav>
+		<div class="topnav">
+			<img id="logo" src="images/logo.jpg" alt="artwork logo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="artist.html">Our Artist</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html" class="active">Contact Us</a></li>
+			</ul>
+			<a href="javascript:void(0);" style="font-size:1.5rem;" class="icon" onclick="topMenu()">&#9776;</a>
+		</div>
+    </nav>
+    <header>
+        <img src="images/contact-header.jpeg" alt=" Contact Image">
+        <div class="headername">
+            <div class="leftblock">
+                <p>S</p>
+                <p>GALLE</p>
+                <p>CON</p>
+            </div>
+            <div class="middleblock">
+                <p>A</p>
+                <p>R</p>
+                <p>T</p>
+            </div>
+            <div class="rightblock">
+                <p>M</p>
+                <p>Y</p>
+                <p>ACT</p>
+            </div>
+        </div>
+        <h1> contact us</h1>
+    </header>
+	<div class="content">
+        <main> 
+            <p>
+                 Need to get in touch with us? Call our on <span id="phonenumber">+64 03-3661234</span>, or send us a message using the contact form below.
+            </p>  
+            <form class="contact-form" action="mailto:sam.artworks@gmail.com" method="post">
+                <div class="field-group">
+                    <label class="label" for="name">Name<span class="asterisk">*</span></label><br>
+                    <input id="contact-name" class="required" type="text" name="name" value="" required="">
+                </div>
+
+                <div class="field-group">
+                    <label class="label " for="email">Email<span class="asterisk">*</span></label><br>
+                    <input id="contact-email" class="required" type="email" name="email" value="" required="">
+                </div>
+
+                <div class="field-group">
+                    <label class="label" for="phone">Phone</label><br>
+                    <input id="contact-phone"  type="tel" name="phone" value="">
+                </div>
+                <div class="field-group">
+                    <label class="label || required" for="message">Message<span class="asterisk">*</span></label><br>
+                    <textarea name="message" id="message" class="required" rows="6" cols="25" required="required"
+                        placeholder="Leave youe message here..."></textarea>
+                </div>		
+                <div class="btn">				
+                  <button type="submit" class=" btn-primary" >Submit</button>
+                </div>
+            </form>
+            <ul class="social-link">
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </main>
+
+        <aside>
+            <h2> Opening Hours &amp; Location</h2>
+            <div class="contactmessage">
+                <h3><i class="fa fa-clock-o"></i>Hours:</h3>
+                <span><strong>Monday - Friday:</strong> 9am - 5pm<br>
+                    <strong>Saturday:</strong> 10am - 3pm<br>
+                    <strong>Sunday:</strong> Closed
+            </span>
+            </div>
+            
+            <div class="contactmessage">
+                    <h3><i class="fa fa-phone"></i>Phone:</h3>
+                    <span>03-3661234</span>
+            </div>
+            <div class="contactmessage">
+                <h3><i class="fa fa-pencil"></i>email:</h3>
+                <span>sam.artworks@gmail.com</span>
+            </div>
+            <div class="contactmessage">
+                <h3><i class="fa fa-map-marker"></i>Address:</h3>
+                <span><a href="https://www.google.co.nz/search?q=64+manchester+street+christchurch&oq=64&gs_l=psy-ab.1.0.35i39k1j0l9.1405126.1405713.0.1407101.2.2.0.0.0.0.349.597.2-1j1.2.0....0...1.1.64.psy-ab..0.2.594....0.xmzTP0ZrhsE" title="Goole Maps Link" target="_blank">64 Manchester Street</a><br>Christchurch, New Zealand, 8011</span>
+            </div>
+            
+            <div class="googlemap">
+                <iframe
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5i4PaafZhuTY1NMz1AhxI-GJECgknuP4
+                      &q=64 Manchester St, Christchurch Central, Christchurch 8011" allowfullscreen>
+                </iframe>
+            </div>
+        </aside>
+    </div>
+
+                
+
+	<footer class="bottomnav" style="position:relative;" >
+		<ul>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html" class="active">Contact Us</a></li>
+			<li><a href="privacy.html">Copyright&nbsp;&amp;&nbsp;Privacy</a></li>
+			<li><a href="index.html">&copy;2017 Sam</a></li>
+		</ul>
+		<a href="javascript:void(0);" style="font-size:1.5rem;" class="icon" onclick="bottomMenu()">&#9776;</a>
+	</footer>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

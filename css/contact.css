@@ -1,0 +1,358 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+/* LAYOUT */
+
+
+.content {
+    display: flex;
+}
+
+
+main {
+    order: 1;
+    width:50%;
+}
+
+aside {
+    width: 50%;
+    order: 2;
+}
+
+.headername {
+    display: flex;
+    align-items: flex-end;
+}
+
+header img {
+    position: relative;
+    display: inline-block;
+}
+
+.headername {
+    width: 30%;
+    position: absolute;
+    right: 2%;
+    top: 40%;
+}
+
+.googlemap iframe {
+    width: 98%;
+    padding: 0.5em;
+    height: 18rem;
+    margin: 0 1em 1em 0;
+    border: none;
+}
+
+.field-group input,  .field-group textarea {
+    width: 100%;
+    padding: 0.5em 0;
+}
+
+.field-group {
+    padding: 0.5em 0;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Arial,Sans-Serif;
+    color: #444;
+    line-height: 1.5;
+}
+.headername p {
+    font-family: 'Kanit', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 1;
+}
+
+main p {
+    font-size: 1.125rem;
+    padding-bottom: 0.5em;
+}
+header .leftblock {
+    text-align: right;
+}
+
+header .leftblock p {
+    text-align: right;
+}
+
+header .middleblock {
+    text-align: center;
+}
+
+header .rightblock {
+    text-align: left;
+}
+
+main {
+    padding: 1em;
+    margin-right: 2rem;
+}
+
+aside {
+    padding: 0.5em;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    padding: 0.2em 0 0 0.2em;
+    text-transform: uppercase; 
+}
+
+h2 {
+    font-size: 1.75rem;
+    padding-bottom: 0.5em;
+}
+
+.contactmessage {
+	font-size: 1rem;
+}
+.contactmessage h3{
+	font-size: 1.1rem;
+	font-weight: 400;
+	float: left;
+	width: 7rem;
+	margin-right: 0.5rem;
+    line-height: 1.75rem;
+    font-family: 'Baloo Bhaijaan', cursive;
+    text-transform: uppercase;
+}
+.contactmessage h3 i{
+	font-style: normal;
+	font-size:1.125rem;
+	font-family: 'FontAwesome';
+	font-weight: normal;
+    margin-right: 0.4em;
+    
+}
+.contactmessage span{
+	line-height: 1.75rem;
+	display: block;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    color:#666;
+}
+
+.contactmessage a {
+    text-decoration: none;
+}
+.contactmessage a:hover {
+        text-decoration: underline;
+}
+
+.label {
+    font-size: 1.08rem;
+    font-weight: bold;
+}
+
+.btn-primary {
+    padding: 0.5em;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 400;
+    font-size: 1.125rem;
+    border: none;
+    border-radius: 0.2em;
+    
+}
+
+
+
+
+
+/* COLOUR SCHEME & BORDERS */
+
+header .leftblock {
+    color: #fff;
+}
+
+header .middleblock {
+    color: #960B21;
+}
+
+header .rightblock {
+    color: #fff;
+}
+
+.contactmessage a:visited {
+    color:#E92B49;
+}
+
+h1 {
+    border-bottom: 1px solid #A8A4A4;
+}
+
+#phonenumber {
+    color:#E92B49;
+    font-size: 1rem; 
+}
+
+.btn-primary {
+    background-color: #E92B49;
+}
+
+.asterisk {
+    color:#E92B49;
+}
+
+.btn-primary:hover {
+    background-color: black;
+}
+
+.required:focus {
+    border: 1px solid #34E946;
+    outline-color: #34E947;
+}
+
+#contact-phone:focus {
+    border: 1px solid #666;
+    outline-color: #666;
+}
+
+.btn-primary:focus {
+    border: none;
+    outline-color:#fff;
+}
+
+
+
+/* IMAGES & VIDEOS */
+
+header img {
+    height: 25rem;
+}
+
+/* Social Link */
+.social-link{
+	display: flex;
+	justify-content: center;
+	list-style-type: none;	
+}
+.social-link li{
+	padding: 1em 1em;
+}
+.social-link li a{
+    display: block;
+	width: 3rem;
+	height: 3rem;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1.5rem;
+	color:#fff;
+	border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.twitter a {
+	background-color: #55acee;
+}
+.facebook a {
+	background-color: #3b5998;
+}
+.gplus a {
+    background-color:#D34332;
+}
+
+.social-link li a:hover, .social-link li a:focus{
+    text-decoration: none;
+    background-color: black;
+}
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 62.5rem) and (min-width: 40rem) {
+    #content {
+        flex-direction: column;
+        padding-left: 0.5em;
+    }
+
+    main {
+        width: 100%;
+        order: 1;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    .lead-in {
+        width: 100%;
+        margin: 0.1em;
+    }
+
+    #artworks {
+        display: flex;   
+        margin-bottom: 1em;
+        padding-top: 0.5em;
+    }
+
+    figcaption {
+        font-size: 0.8em;
+    }
+
+    main p:last-child {
+        margin-bottom: 0;
+    }
+
+
+    #artworks figure {
+        padding: 0.8em 0.8em 0.5em 0.8em;
+        width: 33.3%;
+        border: 1px solid #888;
+        background-color: #e4e4e4;
+        border-radius: 0;
+        margin: 0 em;
+    }
+}
+@media screen and (max-width: 40rem) {
+    #content {
+        flex-direction: column;
+        padding-left: 0.5em;
+    }
+
+    main {
+        width: 100%;
+        order: 1;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    .lead-in {
+        width: 100%;
+        margin: 0.1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+}

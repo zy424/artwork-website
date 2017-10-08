@@ -1,0 +1,206 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+/* LAYOUT */
+
+
+#content, main, aside {
+    display: flex;
+}
+
+
+
+#content {
+   padding-top: 4em;
+   padding-right: 1em;
+}
+
+
+
+main {
+    padding: 1.5em 0 1.5em 0;
+    order: 2;
+    width: 65%;
+}
+
+aside {
+    width: 35%;
+    order: 1;
+}
+
+aside figure {
+    margin-bottom: 1.5em;
+    padding: 1.5em;
+}
+
+#artworks {
+    padding: 2em 2em 0 1em;
+}
+
+#artworks a:hover img {
+	transform: scale(1.05,1.05);
+}
+
+#artworks img {
+	transition: transform 0.4s ease;		
+}
+
+
+
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Verdana, Arial, sans-serif;
+    color: #444;
+    line-height: 1.5;
+}
+
+p {
+    text-align: left;
+    margin-bottom: 1.5em;
+}
+
+main p:last-child {
+    margin-bottom:0;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 0 0 0.3em 0;
+    
+}
+
+figcaption {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#artistname a {
+    text-decoration: none;
+}
+
+#artistname a:hover {
+    text-decoration: underline;
+    color:red;
+}
+
+#artistname a:visited {
+    color:red;
+}
+
+/* COLOUR SCHEME & BORDERS */
+
+#artworks figure {
+    background-color: #e4e4e4;
+    border: 1px solid #888;
+    border-radius: 0.5em;
+}
+
+h1 {
+    border-bottom: 1.5px solid #888;
+    margin-bottom: 0.5em;
+}
+
+
+
+
+
+
+/* IMAGES & VIDEOS */
+
+.lead-in {
+    width: 15rem;
+    float: right;
+    margin: 0 0 0.5em 0.5em;
+}
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 62.5rem) and (min-width: 40rem) {
+    #content {
+        flex-direction: column;
+        padding-left: 0.5em;
+    }
+
+    main {
+        width: 100%;
+        order: 1;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    .lead-in {
+        width: 100%;
+        margin: 0.1em;
+    }
+
+    #artworks {
+        display: flex;   
+        margin-bottom: 1em;
+        padding-top: 0.5em;
+    }
+
+    figcaption {
+        font-size: 0.8em;
+    }
+
+    main p:last-child {
+        margin-bottom: 0;
+    }
+
+
+    #artworks figure {
+        padding: 0.8em 0.8em 0.5em 0.8em;
+        width: 33.3%;
+        border: 1px solid #888;
+        background-color: #e4e4e4;
+        border-radius: 0;
+        margin: 0 em;
+    }
+}
+@media screen and (max-width: 40rem) {
+    #content {
+        flex-direction: column;
+        padding-left: 0.5em;
+    }
+
+    main {
+        width: 100%;
+        order: 1;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+    }
+
+    .lead-in {
+        width: 100%;
+        margin: 0.1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+}

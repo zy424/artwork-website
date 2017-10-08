@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sam Artwork</title> 
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/artworks.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<meta charset="UTF-8" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+	<meta name="description" content="New Zealand, Christchurch, artworks and gallery">
+</head> 
+<body>	
+	<nav>
+		<div class="topnav">
+			<img id="logo" src="images/logo.jpg" alt="artwork logo">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="artist.html" class="active">Our Artist</a></li>
+				<li><a href="blog.html">Blog</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			<a href="javascript:void(0);" style="font-size:1.5rem;" class="icon" onclick="topMenu()">&#9776;</a>
+		</div>
+	</nav>
+	<div class="content">
+        <main>   
+            <figure class="myartwork tooltip">
+            <img src="images/pathway-to-the-sea.jpg" alt="black phoenix">
+            <span class="tooltiptext">Add to album</span>
+            </figure>
+
+            <div class="artworkdetails">
+                <h2>Artwork Detail</h2>
+                <ul>
+                    <li><span class="mydetail">Title: </span>Pathway to the sea</li>
+                    <li><span class="mydetail">Aritist: </span><a href="https://en.wikipedia.org/wiki/Ralph_Hotere" id="artistname" alt="Palph Hotere" target="_blank">Ralph Hotere</a></li>
+                    <li><span class="mydetail">Production Date: </span>1975</li>
+                    <li><span class="mydetail">Medium: </span>pencil and watercolour on paper</li>
+                    <li><span class="mydetail">Size(H x W): </span>560 x 765 mm</li>
+                    <li><span class="mydetail">Incription: </span>(l.c.) "Drawing for Ian Wedde's "Pathway to the Sea" Hotere Feb'75 </li>
+                    <li><span class="mydetail">Copyright: </span>Copying restrictions apply</li>
+                    <li><span class="mydetail">Display status: </span>Not on display</li>
+                <ul>
+            </div>
+        </main>
+                
+        <section>
+            <div class="sectionheader">
+                <h1>Ralph Hotere &nbsp;&nbsp;<span class="famousartworks">Famous Artworks</span></h1>
+                <img src="images/section-header.jpg" alt="Section Header">         
+            </div>
+            <div class="artworks">
+                <figure>
+                    <div class="menu-image">
+                        <a href="artwork1.html"> 
+                            <div class="menu-box-shadow"><p>VIEW ARTWORK</p></div>
+                            <img src="images/black-phoenix.jpg" alt="black phoenix" >
+                        </a>
+                    </div>
+                    <figcaption>Black Phoenix</figcaption>
+                </figure>
+                <figure>
+                    <div class="menu-image">
+                        <a href="artwork3.html">
+                            <div class="menu-box-shadow"><p>VIEW ARTWORK</p></div>
+                            <img src="images/towards aramoana.jpg" alt="Towards Aramoana.jpg">
+                        </a>
+                    </div>
+                    <figcaption>Towards Aramoana</figcaption>
+                </figure>
+                <figure class="selected tooltip">
+                    <img src="images/pathway-to-the-sea.jpg" alt="Pathway to Sea">
+                    <span class="tooltiptext">Add to album</span>
+                    <figcaption>Pathway to sea </figcaption>
+                </figure>    
+            </div>
+        </section>
+    </div>
+
+	<footer class="bottomnav" style="position:relative;" >
+		<ul>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+			<li><a href="privacy.html">Copyright&nbsp;&amp;&nbsp;Privacy</a></li>
+			<li><a href="index.html">&copy;2017 Sam</a></li>
+		</ul>
+		<a href="javascript:void(0);" style="font-size:1.5rem;" class="icon" onclick="bottomMenu()">&#9776;</a>
+	</footer>
+	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate.min.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
