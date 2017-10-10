@@ -4,7 +4,7 @@
 	<title>Sam Artwork</title> 
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css"/>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.css"  >
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Kanit" />
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat" >
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" >
@@ -29,7 +29,9 @@
 		</div>
     </nav>
     <header>
-        <img src="images/contact-header.jpeg" alt=" Contact Image">
+        <div class="headerimg">
+            <img src="images/contact-header.jpeg" alt=" Contact Image" />
+        
         <div class="headername">
             <div class="leftblock">
                 <p>S</p>
@@ -47,12 +49,14 @@
                 <p>ACT</p>
             </div>
         </div>
+    </div>
         <h1> contact us</h1>
     </header>
 	<div class="content">
+            
         <main> 
             <p>
-                 Need to get in touch with us? Call our on <span id="phonenumber">+64 03-3661234</span>, or send us a message using the contact form below.
+                 Need to get in touch with us? Call our on <span id="phonenumber"><a href="tel:+64 3 366123">+64 3 3661234</a></span>, or send us a message using the contact form below.
             </p>  
             <form class="contact-form" action="mailto:sam.artworks@gmail.com" method="post">
                 <div class="field-group">
@@ -78,11 +82,14 @@
                   <button type="submit" class=" btn-primary" >Submit</button>
                 </div>
             </form>
-            <ul class="social-link">
-                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-            </ul>
+            <div class= "shareme">
+                <p class="share"><a href="#"><i class="fa fa-share-alt"></i></a>&nbsp;&nbsp;Share Me! </p>
+                <ul class="social-link">
+                        <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="gplus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+        </div>
         </main>
 
         <aside>
@@ -97,17 +104,16 @@
             
             <div class="contactmessage">
                     <h3><i class="fa fa-phone"></i>Phone:</h3>
-                    <span>03-3661234</span>
+                    <span ><a href="tel:+64 3 3661234">+64 3 3661234</a></span>
             </div>
             <div class="contactmessage">
                 <h3><i class="fa fa-pencil"></i>email:</h3>
-                <span>sam.artworks@gmail.com</span>
+                <span><a href="mailto:sam.artworks@gmail.com">sam.artworks@gmail.com</a></span>
             </div>
             <div class="contactmessage">
                 <h3><i class="fa fa-map-marker"></i>Address:</h3>
                 <span><a href="https://www.google.co.nz/search?q=64+manchester+street+christchurch&oq=64&gs_l=psy-ab.1.0.35i39k1j0l9.1405126.1405713.0.1407101.2.2.0.0.0.0.349.597.2-1j1.2.0....0...1.1.64.psy-ab..0.2.594....0.xmzTP0ZrhsE" title="Goole Maps Link" target="_blank">64 Manchester Street</a><br>Christchurch, New Zealand, 8011</span>
             </div>
-            
             <div class="googlemap">
                 <iframe
                     src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC5i4PaafZhuTY1NMz1AhxI-GJECgknuP4
@@ -119,7 +125,7 @@
 
                 
 
-	<footer class="bottomnav" style="position:relative;" >
+	<footer class="bottomnav">
 		<ul>
 			<li><a href="about.html">About Us</a></li>
 			<li><a href="contact.html" class="active">Contact Us</a></li>

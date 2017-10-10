@@ -32,7 +32,7 @@ body {
 
 .bottomnav {
     overflow: hidden;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
@@ -88,7 +88,7 @@ p {
 }
  
 .topnav a.active {
-    color: red;
+    color: #99031A;
 }
 
 a:hover {
@@ -97,7 +97,7 @@ a:hover {
 }
 
 .bottomnav a.active {
-    color: red;
+    color: #99031A;
 }
 
 

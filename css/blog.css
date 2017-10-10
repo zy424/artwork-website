@@ -1,0 +1,280 @@
+/* RESET */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+/* LAYOUT */
+
+
+.content {
+    display: flex;
+}
+
+
+main {
+    order: 1;
+    width:70%;
+}
+
+aside {
+    width: 30%;
+    order: 2;
+}
+
+.lead {
+    margin-bottom: 1.5em;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.comment h3 {
+    padding: 0;
+}
+
+.comment small {
+    font-weight: normal;
+}
+
+.lead1 {
+    margin-bottom: 1em;
+}
+
+.search input, .updates input {
+    width: 100%;
+    padding: 0.5em 0;
+    border-radius: 0.25em;
+    margin: 0.5em 0;
+}
+
+/* TYPOGRAPHY */
+
+body {
+    font-family: Arial,Sans-Serif;
+    color: #222;
+    line-height:1.5;
+}
+
+.content {
+    padding-top: 4em;
+}
+main {
+    padding: 1em 1em 1.5em 1em;
+    margin-right: 1rem;
+}
+
+aside {
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.125rem;
+    padding-bottom: 1em;
+    font-weight: bold;    
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.blog {
+    border: 1px solid #e2e2e2;
+    background-color:#F5f5f5;
+    border-radius: 0.25em;
+    margin: 1em 0;
+    padding: 1em 1em;
+}
+.name {
+    border-bottom: 0.75px solid #888;
+    padding: 1em 0;
+}
+
+.name p {
+    font-size: 1.4rem;
+    padding-top: 0.5em;
+}
+
+.date {
+    border-bottom: 0.75px solid #888;
+    padding: 1em 0;
+}
+
+.date p {
+    font-size: 0.95rem;
+    padding: 0.5em 0;
+}
+
+
+
+
+/* COLOUR SCHEME & BORDERS */
+
+aside {
+    background-color: #DBD5D5;
+}
+
+h1 a {
+    color: #d01533;
+}
+
+p a {
+    color:#222;
+    font-weight: bold; 
+}
+
+h1 a:hover, p a:hover {
+    color:#d01533
+}
+
+.followme p a {
+    color:#d01533;
+}
+.followme p a:hover {
+   color: black;
+}
+.badge {
+    background-color:#666;
+    border-radius: 10px;
+    color:#fff;
+    padding: 0.2em 0.4em;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+figcaption {
+    text-align: center;
+    font-weight: bold;
+}
+
+.article {
+    border-bottom: 0.75px solid #888;
+    padding-bottom: 1.5em;
+}
+
+.form-control {
+    border-radius: 0.25em;
+}
+
+.commentarea button {
+    color:white;
+    font-weight: bold;
+    background-color: #d01533;
+    border-radius: 0.25em;
+    font-size: 1.05rem;
+    border: none;
+    padding: 0.5em 0.5em;
+    margin-top: 0.5em;
+}
+
+.comment {
+    border-bottom: 0.75px solid #888;
+    padding: 0 0 1em 0.5em;
+    margin-bottom: 2em;
+    
+}
+
+.search button, .updates button {
+    background-color: #d01533;
+    border-radius: 0.25em;
+    color:white;
+    font-weight: bold;
+    border: none;
+    padding: 0.35em;
+    margin-top: 0.5em; 
+}
+
+.search, .updates, .tags, .posts {
+    padding-top: 1em;
+    margin-top: 2em;
+}
+
+.posts a {
+    color:#222;
+}
+
+.posts a:hover {
+    color:#d01533;
+
+}
+.tags li, .posts li {
+    list-style-type: none;
+    padding: 0.3em;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.red {
+    color:#d01533;
+}
+
+/* IMAGES & VIDEOS */
+
+.blog-image {
+   padding: 1em 0.5em 1em 0;
+}
+
+
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 62.5rem) {
+    main {
+        width: 60%;
+    }
+
+    aside {
+        width: 40%;
+    }
+
+    h1 {
+        font-size:1.75rem;
+    }
+}
+@media screen and (max-width: 40rem) {
+    .content{
+        flex-direction: column;
+    }
+    main {
+        width: 100%;
+        order: 1;
+    }
+
+    aside {
+        width: 100%;
+        order: 2;
+        background-color: #fff;
+    }
+    .updates {
+        margin-top: 0;
+    }
+
+    .followme {
+        margin-bottom: 0;
+    }
+
+    h1 {
+        font-size:1.5rem;
+    }
+
+    figcaption {
+        font-size: 0.9em;
+    }
+}

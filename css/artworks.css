@@ -67,7 +67,7 @@ main ul {
 }
 main li {
     padding-top: 0.5em;
-    font-family: Theinhardt,Arial,Sans-Serif;
+    font-family: Arial,Sans-Serif;
 }
 
 main li a {
@@ -90,7 +90,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     padding-top: 1em;
-    font-family: Theinhardt,Arial,Sans-Serif;
+    font-family: Arial,Sans-Serif;
     font-weight: bold;
 }
 
@@ -98,7 +98,7 @@ figcaption {
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
-    font-family: Theinhardt,Arial,Sans-Serif;
+    font-family: Arial,Sans-Serif;
 }
 
 main .mydetail {
@@ -148,6 +148,7 @@ main .artworkdetails {
 main li a:visited {
     color:#d01533;
 }
+
 
 /* IMAGES & VIDEOS */
 
@@ -200,6 +201,12 @@ main img {
     opacity: 0;
     transition: opacity 1s;
 }
+
+.tooltiptext a, section .tooltiptext {
+    text-decoration: none;
+    color:white;
+}
+
 
 section .tooltiptext {
     visibility: invisible;
