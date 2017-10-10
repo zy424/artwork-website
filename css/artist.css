@@ -142,6 +142,7 @@ h1 {
     main {
         width: 100%;
         order: 1;
+        padding: 0 1em;
     }
 
     aside {
@@ -149,12 +150,7 @@ h1 {
         order: 2;
     }
 
-    .lead-in {
-        width: 100%;
-        margin: 0.1em;
-    }
-
-    #artworks {
+      #artworks {
         display: flex;   
         margin-bottom: 1em;
         padding-top: 0.5em;
@@ -170,12 +166,12 @@ h1 {
 
 
     #artworks figure {
-        padding: 0.8em 0.8em 0.5em 0.8em;
+        padding: 1.3em 1.3em 1em 1.3em;
         width: 33.3%;
         border: 1px solid #888;
         background-color: #e4e4e4;
-        border-radius: 0;
-        margin: 0 em;
+        border-radius: 0.2em;
+        margin: 0  0.25em;
     }
 }
 @media screen and (max-width: 40rem) {
