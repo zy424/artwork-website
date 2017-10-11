@@ -64,3 +64,13 @@ $(function(){
         moveCarousel(false);
     });
 });
+
+//About Page Album
+$(function() {
+    "use strict";
+    $('.image').colorbox({
+        rel:'image',
+        width:"75%", 
+        height:"75%"
+    });  
+});

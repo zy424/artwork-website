@@ -125,7 +125,7 @@ aside p {
 
 
 h1 {
-    color:#d01533
+    color:#d01533;
 }
 
 h2 {
@@ -138,6 +138,55 @@ h2 {
 header img {
     height: 25rem;
 }
+
+/* ALBUM */
+
+.album {
+    padding: 0 1em;
+}
+
+.album h3 {
+    font-size:2.25rem;
+}
+
+#album-artworks {
+    color:#d01533;
+}
+.images-gallery {
+    display: flex;
+    padding: 1em 0;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 25%;
+    padding: 0.5em;
+}
+
+.image h4{
+    font-size: 1.125em;
+    color:#d01533;
+    font-weight: bold;
+}
+
+.image p {
+    font-size: 0.95em;
+    color:#444;
+    font-style: italic;
+}
+
+.images-gallery a {
+    text-decoration: none;
+}
+
+.images-gallery a:hover img {
+	transform: scale(1.05,1.05);
+}
+
+.images-gallery img {
+    transition: transform 0.4s ease;
+}		
+
 
 /* RESPONSIVENESS */
 @media screen and (max-width: 62.5rem) and (min-width: 40rem) {
@@ -171,7 +220,11 @@ header img {
         left: 2%;
         animation: none;
         top: 60%;   
-    }   
+    } 
+    
+    .images-gallery a {
+        width: 33.3%;
+    }
 }
 
 @media screen and (max-width: 40rem) {
@@ -214,11 +267,30 @@ header img {
 
     aside {
         padding-top: 1em;
-        margin-bottom: 1.5em;
+        margin-bottom: 0;
     }
  
     #aside2 {
         margin-top: 2em;
-   }
+    }
+   .images-gallery a {
+        width: 33.3%;
+    }
+    .album h3 {
+        font-size:1.75rem;
+    }
+
+    .image h4, .image p {
+        display: none;
+    }
+    
+    .album h3::after {
+        content:"(click image to see)";
+        font-size: 0.5em;
+        color:#444; 
+        font-weight: normal;
+        font-family: Arial,Sans-Serif;
+    }
+
 }
 

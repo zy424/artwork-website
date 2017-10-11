@@ -94,15 +94,16 @@ figcaption {
 
 #artistname a {
     text-decoration: none;
+    color: #d01533;
 }
 
 #artistname a:hover {
     text-decoration: underline;
-    color:red;
+    color: #d01533;
 }
 
 #artistname a:visited {
-    color:red;
+    color: #d01533;
 }
 
 /* COLOUR SCHEME & BORDERS */

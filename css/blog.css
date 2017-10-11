@@ -57,6 +57,24 @@ aside {
     margin: 0.5em 0;
 }
 
+.tags li {
+    list-style-type: none;
+    padding: 0.3em;
+}
+
+.posts li {
+    padding: 0.3em 0;
+}
+
+.posts ul {
+    padding-left: 1.2em;
+    list-style: none;
+    text-indent: -1.25em;
+}
+
+
+
+
 /* TYPOGRAPHY */
 
 body {
@@ -88,9 +106,28 @@ h3 {
     font-weight: bold;    
 }
 
+.posts h3, .tags h3 {
+    padding-bottom: 0.5em;
+}
 
 a {
     text-decoration: none;
+}
+
+.name p {
+    font-size: 1.4rem;
+    padding-top: 0.5em;
+}
+
+.date p {
+    font-size: 0.95rem;
+    padding: 0.5em 0;
+}
+
+/* COLOUR SCHEME & BORDERS */
+
+aside {
+    background-color: #DBD5D5;
 }
 
 .blog {
@@ -100,33 +137,10 @@ a {
     margin: 1em 0;
     padding: 1em 1em;
 }
+
 .name {
     border-bottom: 0.75px solid #888;
     padding: 1em 0;
-}
-
-.name p {
-    font-size: 1.4rem;
-    padding-top: 0.5em;
-}
-
-.date {
-    border-bottom: 0.75px solid #888;
-    padding: 1em 0;
-}
-
-.date p {
-    font-size: 0.95rem;
-    padding: 0.5em 0;
-}
-
-
-
-
-/* COLOUR SCHEME & BORDERS */
-
-aside {
-    background-color: #DBD5D5;
 }
 
 h1 a {
@@ -210,11 +224,13 @@ figcaption {
 
 .posts a:hover {
     color:#d01533;
-
 }
-.tags li, .posts li {
-    list-style-type: none;
-    padding: 0.3em;
+
+.posts li::before {
+    content: "•";
+    color: #d01533;
+    font-size: 1.5em;
+    margin-right: 0.5em;   
 }
 
 button:hover {
@@ -224,6 +240,11 @@ button:hover {
 
 .red {
     color:#d01533;
+}
+
+.date {
+    border-bottom: 0.75px solid #888;
+    padding: 1em 0;
 }
 
 /* IMAGES & VIDEOS */
