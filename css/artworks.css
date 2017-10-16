@@ -1,19 +1,6 @@
-/* RESET */
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
- 
-* {
-    box-sizing: border-box;
-}
 
 /* LAYOUT */
-
 
 main {
     display: flex;
@@ -53,12 +40,6 @@ section .artworks {
 
 
 /* TYPOGRAPHY */
-
-body {
-    font-family: Arial, sans-serif;
-    color: #444;
-    line-height: 1.5;
-}
 
 main ul {
     list-style-type: none;
@@ -115,8 +96,7 @@ section .artworks {
 /* COLOUR SCHEME & BORDERS */
 
 h1 .famousartworks {
-    color:#d01533;
-   
+    color:#A83347; 
 }
 
 h1 {
@@ -124,7 +104,7 @@ h1 {
 }
 
 h2 {
-    color: #d01533;
+    color: #A83347;
 }
 section .sectionheader {
        margin-bottom: 0.5em;
@@ -146,7 +126,7 @@ main .artworkdetails {
 }
 
 main li a:visited {
-    color:#d01533;
+    color:#A83347;
 }
 
 
@@ -163,7 +143,7 @@ section figure {
 }
 
 section .selected {
-   color:#d01533;
+   color:#A83347;
 }
 
 main img {
@@ -188,7 +168,7 @@ main img {
 .tooltiptext {
     visibility: invisible;
     width: 8rem;
-    background-color: #d01533;
+    background-color: #A83347;
     color: #fff;
     border-radius: 6px;
     padding: 0.5em 0;
@@ -214,7 +194,7 @@ section .tooltiptext {
     top: 50%;    
     left: 45%;
     padding: 0.4em 0;
-    background-color: #d01533;
+    background-color: #A83347;
 }
 
 .tooltip:hover .tooltiptext {
@@ -251,7 +231,7 @@ section .tooltiptext {
     top: 43%;
     text-align: center;
     color: #ffffff;
-    background-color:#D01532;
+    background-color:#A83347;
     padding: 0.4em 0;
     border-radius: 0.5em;
 	display: block;
@@ -361,7 +341,7 @@ section .tooltiptext {
     main .tooltiptext{
         visibility: invisible;
         width: 8rem;
-        background-color: #d01533;
+        background-color: #A83347;
         color: #fff;
         border-radius: 6px;
         padding: 0.3em 0;

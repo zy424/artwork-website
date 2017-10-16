@@ -1,32 +1,11 @@
-/* RESET */
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
- 
-* {
-    box-sizing: border-box;
-}
 
 /* LAYOUT */
-
-
-#content, main, aside {
+.content {
     display: flex;
+    padding-right: 1em;
+    padding-top: 4em;
 }
-
-
-
-#content {
-   padding-top: 4em;
-   padding-right: 1em;
-}
-
-
 
 main {
     padding: 1.5em 0 1.5em 0;
@@ -45,7 +24,7 @@ aside figure {
 }
 
 #artworks {
-    padding: 2em 2em 0 1em;
+    padding: 0.5em 2em 0 1em;
 }
 
 #artworks a:hover img {
@@ -62,14 +41,7 @@ aside figure {
 /* TYPOGRAPHY */
 
 body {
-    font-family: Verdana, Arial, sans-serif;
-    color: #444;
-    line-height: 1.5;
-}
-
-p {
-    text-align: left;
-    margin-bottom: 1.5em;
+    font-family: Verdana, Arial, sans-serif;  
 }
 
 main p:last-child {
@@ -83,7 +55,12 @@ h1, h2, h3 {
 h1 {
     font-size: 2.5rem;
     padding: 0 0 0.3em 0;
-    
+}
+
+h2 {
+    font-size: 1.75rem;
+    text-align: center;
+    padding:0.25em;
 }
 
 figcaption {
@@ -94,16 +71,16 @@ figcaption {
 
 #artistname a {
     text-decoration: none;
-    color: #d01533;
+    color: #A83347;
 }
 
 #artistname a:hover {
     text-decoration: underline;
-    color: #d01533;
+    color: #A83347;
 }
 
 #artistname a:visited {
-    color: #d01533;
+    color: #A83347;
 }
 
 /* COLOUR SCHEME & BORDERS */
@@ -112,6 +89,7 @@ figcaption {
     background-color: #e4e4e4;
     border: 1px solid #888;
     border-radius: 0.5em;
+    box-shadow: 5px 5px 2.5px #888;
 }
 
 h1 {
@@ -119,8 +97,9 @@ h1 {
     margin-bottom: 0.5em;
 }
 
-
-
+h2 {
+    color: #A83347;
+}
 
 
 
@@ -132,30 +111,190 @@ h1 {
     margin: 0 0 0.5em 0.5em;
 }
 
+/* LEFT SUBNAV */
+
+.subnav {
+    padding: 3em 2em 1em 1em;
+}
+
+.subnav ul {
+    background-color: #e4e4e4;
+    border: 1px solid #888;
+    border-radius: 0.2em;
+    margin-top: 0.5em;
+    box-shadow: 5px 5px 2.5px #888;
+}
+
+.subnav li {
+    list-style-type: none;
+    border-bottom: 1px solid #888;
+    padding: 0.5em 1em;  
+}
+
+.subnav a {
+    text-decoration: none;
+    color: #A83347; 
+    padding: 0.5em 0;
+    
+}
+
+.subnav li:first-child {
+    background-color: #A83347;
+}
+
+.subnav li:last-child {
+    border-bottom: none;
+}
+
+.subnav li .active {
+    color: #fff;
+}
+
+.subnav li:hover {
+    background-color: #A83347;
+}
+
+.subnav li {
+    position: relative;
+}
+.subnav a .rightarrow {
+   position: absolute;
+   right: 0;
+   padding-right: 1.5em;
+}
+
+.subnav a:hover {
+    color:#fff;
+ }
+
+ .subnav .nav {
+    color:#222;
+    font-size: 0.9em;
+ }
+
+ #masterpiece {padding-top: 2em;}
+
+ /* TIMELINE */
+
+/* The actual timeline (the vertical ruler) */
+#timeline {
+    font-size: 1.75rem;
+    padding-top: 1.5em;
+}
+.timeline {
+    position: relative;
+    background-color: #888;
+    padding: 1em 0;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+/* Timelinecontainer around content */
+.timelinecontainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.timelinecontainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #99031A;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -16px;
+}
+
+/* The actual content */
+.timelinecontent {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
 
 /* RESPONSIVENESS */
 @media screen and (max-width: 62.5rem) and (min-width: 40rem) {
-    #content {
+    .content {
         flex-direction: column;
         padding-left: 0.5em;
     }
 
     main {
         width: 100%;
-        order: 1;
+        order:2;
         padding: 0 1em;
     }
 
     aside {
         width: 100%;
-        order: 2;
+        order: 1;
     }
 
-      #artworks {
+    #artworks {
         display: flex;   
         margin-bottom: 1em;
         padding-top: 0.5em;
-    }
+          }
 
     figcaption {
         font-size: 0.8em;
@@ -165,6 +304,9 @@ h1 {
         margin-bottom: 0;
     }
 
+    .subnav {
+        padding-top: 1em;
+    }
 
     #artworks figure {
         padding: 1.3em 1.3em 1em 1.3em;
@@ -174,23 +316,35 @@ h1 {
         border-radius: 0.2em;
         margin: 0  0.25em;
     }
+
+    main h1:first-child {
+        padding-top: 1em;
+    }
+
+    .timeline {
+        margin-bottom: 2em;
+    }
 }
 @media screen and (max-width: 40rem) {
-    #content {
+    .content {
         flex-direction: column;
         padding-left: 0.5em;
     }
 
     main {
         width: 100%;
-        order: 1;
+        order: 2;
     }
 
     aside {
         width: 100%;
-        order: 2;
+        order: 1;
     }
 
+    .subnav {
+        padding-top: 1em;
+    }
+    
     .lead-in {
         width: 100%;
         margin: 0.1em;
@@ -200,4 +354,34 @@ h1 {
         font-size: 2em;
     }
 
+    /*timeline*/
+    /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .timelinecontainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .timelinecontainer::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
 }

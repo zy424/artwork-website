@@ -1,24 +1,11 @@
-/* RESET */
 
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
- 
-* {
-    box-sizing: border-box;
-}
 
 /* LAYOUT */
 
-
 .content {
     display: flex;
+    padding-top: 1em;
 }
-
 
 main {
     order: 1;
@@ -35,15 +22,15 @@ aside {
     align-items: flex-end;
 }
 
-header img {
+header  {
     position: relative;
 }
 
 .headername {
-    width: 30%;
+    width: 25%;
     position: absolute;
-    right: 2%;
-    top: 40%;
+    right: 0;
+    top: 30%;
 }
 
 .googlemap iframe {
@@ -68,6 +55,7 @@ header img {
     text-align: center;
 }
 
+
 /* TYPOGRAPHY */
 
 body {
@@ -78,11 +66,10 @@ body {
 
 .headername p {
     font-family: 'Kanit', sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 0;
-    line-height: 1;
-}
+ }
 
 main p {
     font-size: 1.125rem;
@@ -133,6 +120,7 @@ h2 {
 .contactmessage {
 	font-size: 1rem;
 }
+
 .contactmessage h3{
 	font-size: 1.1rem;
 	font-weight: 400;
@@ -143,6 +131,7 @@ h2 {
     font-family: 'Baloo Bhaijaan', cursive;
     text-transform: uppercase;
 }
+
 .contactmessage h3 i{
 	font-style: normal;
 	font-size:1.125rem;
@@ -151,6 +140,7 @@ h2 {
     margin-right: 0.4em;
     
 }
+
 .contactmessage span{
 	line-height: 1.75rem;
 	display: block;
@@ -208,10 +198,10 @@ header .rightblock {
 }
 
 .contactmessage a {
-    color:#E92A49;
+    color:#A83347;
 }
 .contactmessage a:visited {
-    color:#E92A49;
+    color:#A83347;
 }
 
 h1 {
@@ -219,15 +209,15 @@ h1 {
 }
 
 #phonenumber a {
-    color:#E92B49;    
+    color:#A83347;    
 }
 
 .btn-primary {
-    background-color: #d01533;
+    background-color: #A83347;
 }
 
 .asterisk {
-    color:#E92B49;
+    color:#A83347;
 }
 
 .btn-primary:hover {
@@ -261,12 +251,12 @@ header img {
 /* Social Link */
 .social-link{
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
     list-style-type: none;
     	
 }
 .social-link li{
-	padding: 0.5em 1em;
+	padding: 0 1em 1em 1em;
 }
 .social-link li a{
     display: block;
@@ -287,17 +277,18 @@ header img {
 	background-color: #3b5998;
 }
 .gplus a {
-    background-color:#D34332;
+    background-color:#d34332;
 }
 
 .share a {
     font-size: 1.5rem;
     color: black;
+    color:#A83347;
 }
 
 .shareme {
-    border: 1px solid #888;
-    background-color:#f5f5f5;
+    border: 1px solid #E2DDDD;
+    background-color:#e5e5e5;
     border-radius: 0.25em;
     margin-top: 2em;
 }
@@ -307,6 +298,7 @@ header img {
     font-size: 1.25rem;
     font-weight: bold;
     color:#555;
+    margin-bottom: 0.5em;
 }
 
 .social-link li a:hover, .social-link li a:focus{
@@ -322,9 +314,8 @@ header img {
     }
     
     .headername {
-        width: 30%;
-        right: 4%;
-        top: 40%;
+        width: 25%;
+        right: 6%;
     }
 
     .headername p {
@@ -378,6 +369,7 @@ header img {
         font-size: 0.9rem;
     }
 }
+
 @media screen and (max-width: 40rem) {
 
     .headerimg {
@@ -423,6 +415,8 @@ header img {
 
     h2 {
         font-size: 1.25rem;
+        border-top: 1px solid #888;
+        padding-top: 2em;
     }
 
     header img {

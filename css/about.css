@@ -1,24 +1,9 @@
-/* RESET */
-
-html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
-}
- 
-* {
-    box-sizing: border-box;
-}
 
 /* LAYOUT */
-
 
 .content {
     display: flex;
 }
-
 
 main {
     order: 1;
@@ -30,9 +15,7 @@ aside {
     order: 2;
 }
 
-
-
-header img {
+header {
     position: relative;
 }
 
@@ -49,22 +32,14 @@ header img {
 
 @keyframes mymove {
     from {top: 0;}
-    to {top: 54%;}
+    to {top: 65%;}
 }
 
 main p {
     margin-top: 1em;
 }
 
-
-
 /* TYPOGRAPHY */
-
-body {
-    font-family: Arial,Sans-Serif;
-    color: #444;
-    line-height: 1.5;
-}
 
 main {
     padding: 0 1em 1.5em 1em;
@@ -88,14 +63,13 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    text-transform: uppercase;   
+    text-transform: uppercase;  
 }
 
 h3 {
     font-size: 1.85rem;
     border-bottom: 1px solid #A8A4A4;
-    padding: 1em 0 0.2em 0;
-     
+    padding: 1em 0 0.2em 0;   
 }
 
 aside p {
@@ -125,7 +99,7 @@ aside p {
 
 
 h1 {
-    color:#d01533;
+    color:#99031A;
 }
 
 h2 {
@@ -150,7 +124,7 @@ header img {
 }
 
 #album-artworks {
-    color:#d01533;
+    color:#99031A;
 }
 .images-gallery {
     display: flex;
@@ -165,7 +139,7 @@ header img {
 
 .image h4{
     font-size: 1.125em;
-    color:#d01533;
+    color:#99031A;
     font-weight: bold;
 }
 
@@ -213,15 +187,7 @@ header img {
     h2 {
         font-size: 1.75rem;
     }
-    .headername {
-        position:absolute;
-        z-index: 5;
-        display: inline-block;
-        left: 2%;
-        animation: none;
-        top: 60%;   
-    } 
-    
+   
     .images-gallery a {
         width: 33.3%;
     }
@@ -242,23 +208,12 @@ header img {
         order: 2;
     }
 
-    
     h1 {
-        font-size: 1.5rem;
-        
+        font-size: 1.5rem;  
     }
 
     h2 {
         font-size: 1.125rem;
-    }
-
-    .headername {
-        position:absolute;
-        z-index: 5;
-        display: inline-block;
-        left: 2%;
-        animation: none;   
-        top: 40%;
     }
     
     header img {

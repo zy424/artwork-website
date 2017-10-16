@@ -1,11 +1,11 @@
 /* RESET */
 
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
     vertical-align: baseline;
+    margin: 0;
 }
  
 * {
@@ -15,15 +15,21 @@ html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, f
 /* LAYOUT */
 
 body {
-    
+    max-width: 84rem;
+    margin: 0 auto;
 }
 
 .topnav {
-    overflow: hidden;
     display: flex;
     align-items: center;
-    position: fixed;
+    position:fixed;  
+    top: 0;
     width: 100%;
+}
+
+.topnav, .bottomnav {
+    overflow: hidden;
+
 }
   
 .topnav .icon {
@@ -31,7 +37,6 @@ body {
 }
 
 .bottomnav {
-    overflow: hidden;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -41,12 +46,16 @@ body {
 .bottomnav .icon {
     display: none;
 }
+
+.padding {
+    padding-top: 4em;
+}
     
 
 /* TYPOGRAPHY */
 
 body {
-    font-family: Verdana, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     color: #444;
     line-height: 1.5;
 }
@@ -122,7 +131,7 @@ a:hover {
 }
 
 .bottomnav li {
-    padding: 0.5em 0;
+    padding: 0.75em 0;
 }
 
 .topnav a, .bottomnav a {
@@ -168,7 +177,7 @@ img {
     }
 
     .bottomnav.responsive a:hover {
-        background-color: #E4E41E;
+        background-color: #99031A;
         color: white;
     }
 
