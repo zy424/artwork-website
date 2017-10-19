@@ -71,7 +71,6 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     padding-top: 1em;
-    font-family: Arial,Sans-Serif;
     font-weight: bold;
 }
 
@@ -79,7 +78,6 @@ figcaption {
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
-    font-family: Arial,Sans-Serif;
 }
 
 main .mydetail {
@@ -129,13 +127,12 @@ main li a:visited {
     color:#A83347;
 }
 
-
-/* IMAGES & VIDEOS */
-
-img {
-    width: 100%;
+main li a {
+    color:#A83347;
 }
 
+
+/* IMAGES &VIDEOS */
 section figure {
     width: 33.3%;
     padding: 0 1em;
@@ -157,9 +154,9 @@ main img {
     order: 1;
 }
 
-/*Animation*/
 
-/* Tooltip */
+/*ANIMATION*/
+/* Tooltip animation */
 .tooltip {
     position: relative;
     display: inline-block;
@@ -187,7 +184,6 @@ main img {
     color:white;
 }
 
-
 section .tooltiptext {
     visibility: invisible;
     width: 50%;
@@ -202,7 +198,7 @@ section .tooltiptext {
     opacity: 0.9;
 }
 
-/*Menu image*/
+/*Menu image animation*/
 .menu-image {
 	position:relative;
 }
@@ -249,29 +245,24 @@ section .tooltiptext {
         flex-direction: column;
         justify-content: center;
     }
-
     .myartwork {
         width: 90%;
         order: 1;  
     }
-
     main img {
         margin-top: 0;
         padding-left: 0.5em;
     }
-
     main .artworkdetails {
         width: 90%;
         order: 2;
         margin-left: 1.5em;
         margin-top: 0;
     }
-
     .sectionheader h1 {
         font-size: 1.75rem;
         padding: 0.25em 0;
     }
-
     section {
         width: 90%;
         margin-left: 1.5em;
@@ -279,11 +270,9 @@ section .tooltiptext {
     .sectionheader img {
         display: none;
     }
-
     section .sectionheader {
         margin-top: 1.5em;
     }
-
     .menu-image p {
         font-size: 0.8em;
         padding: 0.2em 0;
@@ -296,12 +285,10 @@ section .tooltiptext {
         flex-direction: column;
         justify-content: center;
     }
-
     .myartwork {
         width: 90%;
         order: 1;  
     }
-
     main img {
         margin-top: 0;
         padding-left: 0.5em;
@@ -313,16 +300,13 @@ section .tooltiptext {
         margin-left: 1.5em;
         margin-top: 0;
     }
-
     .sectionheader h1 {
         font-size: 1.3rem;
         padding: 0.25em 0;
     }
-
     .sectionheader img {
         display: none;
     }
-
     section .sectionheader {
         margin-top: 1.5em;
     }
@@ -330,14 +314,12 @@ section .tooltiptext {
         flex-direction: column;
         padding: 0em 2em 0 1em;
     }
-
     section figure {
         width: 100%;
         padding: 0 1em;
         box-shadow: 10px 10px 5px #888;
         margin: 1em 0;
     }
-
     main .tooltiptext{
         visibility: invisible;
         width: 8rem;

@@ -57,13 +57,6 @@ header  {
 
 
 /* TYPOGRAPHY */
-
-body {
-    font-family: Arial,Sans-Serif;
-    color: #444;
-    line-height: 1.5;
-}
-
 .headername p {
     font-family: 'Kanit', sans-serif;
     font-size: 3rem;
@@ -152,6 +145,7 @@ h2 {
 .contactmessage a {
     text-decoration: none;
 }
+
 .contactmessage a:hover {
         text-decoration: underline;
 }
@@ -255,9 +249,11 @@ header img {
     list-style-type: none;
     	
 }
+
 .social-link li{
 	padding: 0 1em 1em 1em;
 }
+
 .social-link li a{
     display: block;
 	width: 3rem;
@@ -273,9 +269,11 @@ header img {
 .twitter a {
 	background-color: #55acee;
 }
+
 .facebook a {
 	background-color: #3b5998;
 }
+
 .gplus a {
     background-color:#d34332;
 }
@@ -312,66 +310,53 @@ header img {
     header img {
         height: 20rem;
     }
-    
     .headername {
         width: 25%;
         right: 6%;
     }
-
     .headername p {
         font-size: 2.5rem;
     }
-
     h1 {
         font-size: 1.75rem;
     }
-
     h2 {
         font-size: 1.4rem;
     }
-
     .googlemap iframe {
         height: 13em;
     }
-
     .btn-primary {
         padding: 0.3em;
         font-size: 1.06rem; 
     }
-
     .social-link li a {
         width: 2.5rem;
         height: 2.5rem;
         line-height: 2.5rem;
         font-size: 1.25rem;  
     }
-
     .label {
         font-size: 1rem;
     }
-
     main p {
         font-size: 1rem;
     }
-
     .contactmessage h3 i{
         font-size: 1.05rem;	    
     }
     contactmessage h3 {
         font-size: 1rem;
     }
-    
     .contactmessage {
         font-size: 0.95rem;
     }
-
     #phonenumber {
         font-size: 0.9rem;
     }
 }
 
 @media screen and (max-width: 40rem) {
-
     .headerimg {
         display: flex;
         flex-direction: column;
@@ -380,22 +365,18 @@ header img {
         flex-direction: column;
         padding-left: 0.5em;
     }
-
     main {
         width: 100%;
         order: 1;
     }
-
     aside {
         width: 100%;
         order: 2;
         padding-left: 0.25em;
     }
-
     header img {
         position: static;
     }
-    
     .headername {
         width: 100%;
         position: static;
@@ -403,46 +384,37 @@ header img {
         padding: 0.75em 0 0.5em 0.5em;
         display: border-box;
     }
-
     .headername p {
         font-size: 2rem;
     }
-    
     h1 {
         font-size: 1.5rem;
         padding: 1em 0 0 1em;
     }
-
     h2 {
         font-size: 1.25rem;
         border-top: 1px solid #888;
         padding-top: 2em;
     }
-
     header img {
         height: 13rem;
     }
-
     .googlemap iframe {
         height: 10em;
     }
-
-    .contactmessage h3{
+    .contactmessage h3 {
         width: 6.5rem;
         margin-right: 0.1em;
         line-height: 1.75rem;
         font-family: 'Baloo Bhaijaan', cursive;
         text-transform: uppercase;
     }
-
     .contactmessage h3 i{
         font-size: 1rem;	    
     }
-
     contactmessage h3 {
         font-size: 0.95rem;
     }
-    
     .contactmessage {
         font-size: 0.9rem;
     }

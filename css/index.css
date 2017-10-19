@@ -34,8 +34,8 @@ body {
 
 
 
-/*  ANIMATION */
-#content {
+/* SLOGAN ANIMATION */
+#slogan {
     position:absolute;
     z-index: 5;
     display: inline-block;
@@ -52,51 +52,49 @@ body {
 }
 
 
-#content h1 {
+#slogan h1 {
     font-family: 'Bree Serif', serif;  
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     color: white;
 }
 
-#content h2 {
+#slogan h2 {
     font-family: 'Bree Serif', serif;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: white;
     padding-top: 0.5em;
 }
 
-/*RESPONSIVENESS*/
 
+/*RESPONSIVENESS*/
 @media screen and (max-width: 62.5rem) and (min-width: 40rem) {
-    #content h1 {
+    #slogan h1 {
         font-size: 2.5em;
     }
-    #content h2 {
+    #slogant h2 {
         font-size: 1.7em;
     }
     .slide-nav {
         font-size: 1.75em;
     }
-
-    #content {
+    #slogant {
         right:25%;
     }
 }
 
 @media screen and (max-width: 40rem) {
-    #content h1 {
+    #slogan h1 {
         font-size: 1.5em;
     }
-    #content h2 {
+    #slogant h2 {
         font-size: 1em;
     }
     .slide-nav {
         font-size: 1.5em;
     }
-
-    #content {
+    #slogan {
         right:15%;
     }
 }

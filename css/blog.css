@@ -1,7 +1,6 @@
 
 /* LAYOUT */
 
-
 .content {
     display: flex;
     padding-top: 5em;
@@ -60,14 +59,10 @@ aside {
 }
 
 
-
-
 /* TYPOGRAPHY */
 
 body {
-    font-family: Arial,Sans-Serif;
-    color: #222;
-    line-height:1.5;
+    color: #222; 
 }
 
 main {
@@ -145,9 +140,11 @@ h1 a:hover, p a:hover {
 .followme p a {
     color:#A83347;
 }
+
 .followme p a:hover {
    color: black;
 }
+
 .badge {
     background-color:#666;
     border-radius: 10px;
@@ -201,7 +198,7 @@ figcaption {
 
 .search, .updates, .tags, .posts {
     padding-top: 1em;
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 
 .posts a {
@@ -212,6 +209,7 @@ figcaption {
     color:#A83347;
 }
 
+/* change the color of the list */
 .posts li::before {
     content: "•";
     color: #A83347;
@@ -246,18 +244,15 @@ button:hover {
     main {
         width: 60%;
     }
-
     aside {
         width: 40%;
     }
-
     h1 {
         font-size:1.75rem;
     }
     .content {
         padding-top: 3em;
     }
-
     .blog {
         border: 1px solid #E2DDDD;
         background-color:#e4e4e4;
@@ -272,25 +267,20 @@ button:hover {
         width: 100%;
         order: 1;
     }
-
     aside {
         width: 100%;
         order: 2;
         background-color: #fff;
     }
-
     .updates {
         margin-top: 0;
     }
-
     .followme {
         margin-bottom: 0;
     }
-
     h1 {
         font-size:1.5rem;
     }
-
     figcaption {
         font-size: 0.9em;
     }
