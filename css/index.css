@@ -5,7 +5,6 @@ body {
 }
 
 /* SLIDE */
-
 .my-slides{
     width: 100vw;
     height: 100vh;
@@ -32,7 +31,12 @@ body {
     left: 5%;
 }
 
-
+/* AUDIO */
+#myaudio {
+	position: fixed;
+	top: 6em;
+	left: 1em;
+}
 
 /* SLOGAN ANIMATION */
 #slogan {
@@ -73,13 +77,13 @@ body {
     #slogan h1 {
         font-size: 2.5em;
     }
-    #slogant h2 {
+    #slogan h2 {
         font-size: 1.7em;
     }
     .slide-nav {
         font-size: 1.75em;
     }
-    #slogant {
+    #slogan{
         right:25%;
     }
 }
@@ -88,7 +92,7 @@ body {
     #slogan h1 {
         font-size: 1.5em;
     }
-    #slogant h2 {
+    #slogan h2 {
         font-size: 1em;
     }
     .slide-nav {

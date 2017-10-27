@@ -112,6 +112,18 @@ h2 {
     margin: 0 0 0.5em 0.5em;
 }
 
+/* ARTIST VIEDO */
+.artistviedo {
+    padding: 1em 2em 0 2em;
+}
+
+.hoterevideo {
+    width: 100%;
+}
+
+#hoterememory {
+    color: #A83347;;
+}
 
  /* ARTIST TIMELINE */
  .artisttimeline {
@@ -119,8 +131,8 @@ h2 {
  }
 
 #timeline {
-    font-size: 2rem;
-    padding-top: 1em;
+    font-size: 2.5rem;
+    padding-top: 0.5em;
 }
 
 .timeline {
@@ -221,7 +233,7 @@ h2 {
     .content {
         flex-direction: column;
         padding-left: 0.5em;
-    }
+	}
     main {
         width: 100%;
         order: 1;
@@ -257,6 +269,9 @@ h2 {
     .timeline {
         margin-bottom: 2em;
     }
+    #timeline {
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width: 40rem) {
@@ -278,6 +293,9 @@ h2 {
     }
     h1 {
         font-size: 2em;
+    }
+    #timeline {
+        font-size: 1.25rem;
     }
 
     /*TIMELINE*/
