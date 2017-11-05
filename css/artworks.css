@@ -163,7 +163,7 @@ main img {
 }
 
 .tooltiptext {
-    visibility: invisible;
+    visibility: hidden;
     width: 8rem;
     background-color: #A83347;
     color: #fff;
@@ -185,7 +185,7 @@ main img {
 }
 
 section .tooltiptext {
-    visibility: invisible;
+    visibility: hidden;
     width: 50%;
     top: 50%;    
     left: 45%;
@@ -321,7 +321,7 @@ section .tooltiptext {
         margin: 1em 0;
     }
     main .tooltiptext{
-        visibility: invisible;
+        visibility: hidden;
         width: 8rem;
         background-color: #A83347;
         color: #fff;

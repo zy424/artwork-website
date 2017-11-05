@@ -71,6 +71,10 @@ body {
     padding-top: 0.5em;
 }
 
+h1 a, h2 a {
+	text-decoration: none;
+	color: white;
+}
 
 /*RESPONSIVENESS*/
 @media screen and (max-width: 62.5rem) and (min-width: 40rem) {

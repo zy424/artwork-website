@@ -162,7 +162,8 @@ h2 {
     font-weight: 400;
     font-size: 1.125rem;
     border: none;
-    border-radius: 0.2em;   
+    border-radius: 0.2em;  
+	width:	100%;
 }
 
 #phonenumber {
@@ -382,7 +383,6 @@ header img {
         position: static;
         background-color: black;
         padding: 0.75em 0 0.5em 0.5em;
-        display: border-box;
     }
     .headername p {
         font-size: 2rem;

@@ -130,7 +130,7 @@ h2 {
      padding: 1em 2em;  
  }
 
-#timeline {
+.timelineheader {
     font-size: 2.5rem;
     padding-top: 0.5em;
 }
@@ -269,7 +269,7 @@ h2 {
     .timeline {
         margin-bottom: 2em;
     }
-    #timeline {
+    .timelineheader {
         font-size: 2rem;
     }
 }
@@ -294,7 +294,7 @@ h2 {
     h1 {
         font-size: 2em;
     }
-    #timeline {
+    .timelineheader {
         font-size: 1.25rem;
     }
 

@@ -177,7 +177,7 @@ img {
     .topnav.responsive ul {
         flex-direction: column;
         padding: 0;
-        width: 100;
+        width: 100%;
     }
     .topnav.responsive li {
         padding: 0.5em;
@@ -193,7 +193,7 @@ img {
     .bottomnav a {
         display: none;
         font-size: 1.1em;
-        padding: 0.3em 0.5;
+        padding: 0.3em 0.5em;
     }
     .bottomnav a.icon {
         float: right;
